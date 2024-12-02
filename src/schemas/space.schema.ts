@@ -9,6 +9,7 @@ export type SpaceDocument = Space & Document;
 export class Space {
   @Prop({
     required: true,
+    unique: true,
     trim: true,
   })
   name: string;
